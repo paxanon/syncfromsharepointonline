@@ -91,4 +91,4 @@ if (Test-Path $targetDIR\Skabeloner) { Get-ChildItem $targetDIR -Recurse | Remov
 New-Item -ItemType Directory -Force -Path $targetDIR
 
 # getting latest version of the Templates
-get-Templates -sourceUrl "https://erhvervshusene.sharepoint.com/" -subSiteRelativePath 'sites\lok1-salg2' -DocumentLibraryName "Delte dokumenter\Brand\Skabeloner\" -location $targetDIR
+get-Templates -sourceUrl "https://yoursite.sharepoint.com/" -subSiteRelativePath 'SubPath' -DocumentLibraryName "path/to/templates" -location $targetDIR
